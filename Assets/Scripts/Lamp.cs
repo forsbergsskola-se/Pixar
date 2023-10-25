@@ -32,4 +32,14 @@ public class Lamp : MonoBehaviour
             this.gameObject.GetComponent<Battery>().ConsumeCharge(0.0005f);
         }
     }
+    
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if(this.IsLampOn)
+                TurnOff();
+            else
+                TurnOn();
+        }
+    }
 }
