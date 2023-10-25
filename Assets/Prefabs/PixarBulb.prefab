@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 8988596137478103390}
   - component: {fileID: 7823078556486602240}
   - component: {fileID: 3229530366600630984}
+  - component: {fileID: 796025598933343820}
   m_Layer: 0
   m_Name: PixarBulb
   m_TagString: Untagged
@@ -223,6 +224,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &796025598933343820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220593650285419519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab12ca7472a5774db54c654dcb16d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  jumpForce: 0
 --- !u!1001 &4479404615355698556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,14 +300,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8702451741346836202, guid: 59a4279a30b1948c59fc0e681189cf3b, type: 3}
   m_PrefabInstance: {fileID: 4479404615355698556}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5719203594582866447 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8175365510238189427, guid: 59a4279a30b1948c59fc0e681189cf3b, type: 3}
-  m_PrefabInstance: {fileID: 4479404615355698556}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fbfac365ccd4653b4e268b70d6a2fa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
