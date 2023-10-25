@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6384350926170517960}
   - component: {fileID: 9092908277366398781}
   - component: {fileID: 8180733625685092394}
+  - component: {fileID: 1380664560529056394}
   m_Layer: 5
   m_Name: BatteryUI
   m_TagString: Untagged
@@ -102,6 +103,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1380664560529056394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4992283773491769685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b332bb5052d858b438d54d66caa7d1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8818341190665613267
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +189,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8018868, g: 0.7586745, b: 0.049172327, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
