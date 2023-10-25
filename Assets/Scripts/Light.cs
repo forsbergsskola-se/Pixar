@@ -9,4 +9,9 @@ public class Light : MonoBehaviour
         this.lightBeam.enabled = isTurnedOn;
 
     }
+
+    public void LosingLight(Battery battery)
+    {
+        
+    }
 }
