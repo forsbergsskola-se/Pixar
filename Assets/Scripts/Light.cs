@@ -2,7 +2,6 @@
 
 public class Light : MonoBehaviour
 {
-    public Battery battery;
     public SpriteRenderer lightBeam;
     public void OnLampChange(Lamp lamp)
     {
@@ -13,7 +12,7 @@ public class Light : MonoBehaviour
 
     public void LosingLight(Battery battery)
     {
-        float charge = this.battery.GetCharge();
+        float charge = battery.GetCharge();
         this.lightBeam.transform.localScale = new Vector3(4, 4, 1)*charge;
         // now go to 0
     }
