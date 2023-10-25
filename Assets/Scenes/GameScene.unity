@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &8 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5008274420592289510, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
+  m_PrefabInstance: {fileID: 6647098244383087599}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9286e79392b724bb7974cbdea29e9986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1380664560529056394, guid: 96061fc624bf14f27b6aef068454b148, type: 3}
+      propertyPath: charge
+      value: 
+      objectReference: {fileID: 8}
     - target: {fileID: 3306769941355080825, guid: 96061fc624bf14f27b6aef068454b148, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -803,9 +818,5 @@ SceneRoots:
   - {fileID: 556049647}
   - {fileID: 6647098244383087599}
   - {fileID: 8887858006905820339}
-<<<<<<< HEAD
-=======
-  - {fileID: 4963422814204006262}
   - {fileID: 1198346021}
   - {fileID: 1225886221}
->>>>>>> 08d544c715022d54dc47ce8128a108a28829721c
