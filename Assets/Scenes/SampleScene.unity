@@ -447,7 +447,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2441446274770081371, guid: 0209a1aaed63743e0b3eff2eaae01683, type: 3}
       propertyPath: m_Name
-      value: DarnessUI
+      value: DarknessUI
       objectReference: {fileID: 0}
     - target: {fileID: 2495663276672902764, guid: 0209a1aaed63743e0b3eff2eaae01683, type: 3}
       propertyPath: m_Pivot.x

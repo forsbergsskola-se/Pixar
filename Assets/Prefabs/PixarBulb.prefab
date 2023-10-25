@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 994143674976720594}
+  - component: {fileID: 5008274420592289510}
+  - component: {fileID: 8988596137478103390}
   m_Layer: 0
   m_Name: PixarBulb
   m_TagString: Untagged
@@ -32,6 +34,36 @@ Transform:
   - {fileID: 5111404172854469526}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5008274420592289510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220593650285419519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9286e79392b724bb7974cbdea29e9986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BatteryChargeChangeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8988596137478103390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220593650285419519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283988744dd04b39bc2773b6adf93a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LampOnChangeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &4479404615355698556
 PrefabInstance:
   m_ObjectHideFlags: 0
