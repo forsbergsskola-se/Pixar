@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,7 +7,7 @@ public class Battery : MonoBehaviour
 {
     public UnityEvent<Battery> BatteryChargeChangeEvent;
 
-    private float maxCharge = 100f;
+    private float maxCharge = 1f;
     private float minCharge = 0f;
     private float currentCharge = 0.0f;
     
@@ -35,7 +33,7 @@ public class Battery : MonoBehaviour
         {
             currentCharge = minCharge; //Checks so that you cant remove more from the battery than the minCharge
         }
-        
+        this.BatteryChargeChangeEvent.Invoke(this);
     }
     
 }
