@@ -24,4 +24,22 @@ public class Lamp : MonoBehaviour
         IsLampOn = false;
         LampOnChangeEvent.Invoke(this);
     }
+
+    public void FixedUpdate()
+    {
+        if (IsLampOn == true)
+        {
+            this.gameObject.GetComponent<Battery>().ConsumeCharge(0.0005f);
+        }
+    }
+    
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if(this.IsLampOn)
+                TurnOff();
+            else
+                TurnOn();
+        }
+    }
 }

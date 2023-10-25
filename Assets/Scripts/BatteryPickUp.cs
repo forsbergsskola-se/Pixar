@@ -7,6 +7,6 @@ public class BatteryPickUp : MonoBehaviour
     {
         other.GameObject().GetComponent<Battery>();
         Battery battery = other.GameObject().GetComponent<Battery>();
-        battery.AddCharge(30f);
+        battery.AddCharge(0.3f);
     }
 }

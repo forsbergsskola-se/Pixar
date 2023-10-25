@@ -12,6 +12,8 @@ public class Light : MonoBehaviour
 
     public void LosingLight(Battery battery)
     {
-        
+        float charge = battery.GetCharge();
+        this.lightBeam.transform.localScale = new Vector3(4, 4, 1)*charge;
+        // now go to 0
     }
 }
