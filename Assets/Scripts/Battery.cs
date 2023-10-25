@@ -35,5 +35,4 @@ public class Battery : MonoBehaviour
         }
         this.BatteryChargeChangeEvent.Invoke(this);
     }
-    
 }
