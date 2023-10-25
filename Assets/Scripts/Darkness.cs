@@ -17,7 +17,15 @@ public class Darkness : MonoBehaviour
         bool isTurnedOn = lamp.GetIsTurnedOn();
         UpdateDarkness(isTurnedOn);
     }
+    
+    public void OnaBatteryChange(Battery battery)
+    {
+        float isCharged = battery.GetCharge();
+        UpdateDarknessByBattery(isCharged);
+    }
 
+    // Testing code:
+    
     [ContextMenu("Test Turn On")]
     public void TestTurnOn()
     {
@@ -43,4 +51,13 @@ public class Darkness : MonoBehaviour
 
         this.fullScreenImage.color = this.desiredColor;
     }
+    
+    private void UpdateDarknessByBattery(float isCharged)
+    {
+            this.desiredColor.a = Mathf.Lerp(240, 40, isCharged) / 255f; // = isCharged
+
+        this.fullScreenImage.color = this.desiredColor;
+    }
+    
+    
 }
