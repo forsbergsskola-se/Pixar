@@ -720,14 +720,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 796025598933343820, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
-      propertyPath: jumpForce
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 796025598933343820, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
-      propertyPath: movementSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 994143674976720594, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.06
@@ -768,10 +760,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5008274420592289510, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
+      propertyPath: BatteryChargeChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8887858006905820340}
     - target: {fileID: 7220593650285419519, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
       propertyPath: m_Name
       value: PixarBulb
       objectReference: {fileID: 0}
+    - target: {fileID: 8988596137478103390, guid: 8ccc39a6625134045a663ca467bb30be, type: 3}
+      propertyPath: LampOnChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8887858006905820340}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -874,6 +874,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0209a1aaed63743e0b3eff2eaae01683, type: 3}
+--- !u!114 &8887858006905820340 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4869814547945624286, guid: 0209a1aaed63743e0b3eff2eaae01683, type: 3}
+  m_PrefabInstance: {fileID: 8887858006905820339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dcee9be78f191428b0445d9c3b2322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
