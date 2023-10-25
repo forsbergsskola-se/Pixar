@@ -7,11 +7,12 @@ using UnityEngine.Events;
 public class BatteryUI : MonoBehaviour
 {
     public UnityEvent light;
+    public float batteryLevel;
     public Battery charge;
-    public float batteryLevel = charge.GetCharge();
 
     public void Update()
     {
+        batteryLevel = charge.GetCharge();
         
     }
 }
