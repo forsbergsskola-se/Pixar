@@ -7,20 +7,21 @@ using UnityEngine.Events;
 public class Lamp : MonoBehaviour
 {
     public UnityEvent<Lamp> LampOnChangeEvent;
-
+    private bool IsLampOn;
     public void TurnOn()
     {
-        throw new NotImplementedException();
+        IsLampOn = true;
+        LampOnChangeEvent.Invoke(this);
     }
 
     public bool GetIsTurnedOn()
     {
-        throw new NotImplementedException();
+        return IsLampOn;
     }
 
     public void TurnOff()
     {
-        throw new NotImplementedException();
+        IsLampOn = false;
+        LampOnChangeEvent.Invoke(this);
     }
-    
 }
