@@ -26,6 +26,12 @@ public class Battery : MonoBehaviour
         return this.currentCharge;
     }
 
+    void Start()
+    {
+        currentCharge = 1f;
+         BatteryChargeChangeEvent.Invoke(this);
+    }
+
     public void ConsumeCharge(float amount)
     {
         currentCharge -= amount; // subtracts the amount from the currentCharge

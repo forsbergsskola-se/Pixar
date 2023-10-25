@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Darkness : MonoBehaviour
 {
     public Image fullScreenImage;
+    private bool isLampOn;
     private Color desiredColor;
     
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class Darkness : MonoBehaviour
     public void OnLampChange(Lamp lamp)
     {
         bool isTurnedOn = lamp.GetIsTurnedOn();
+        this.isLampOn = isTurnedOn;
         UpdateDarkness(isTurnedOn);
     }
     
@@ -54,8 +56,8 @@ public class Darkness : MonoBehaviour
     
     private void UpdateDarknessByBattery(float isCharged)
     {
-            this.desiredColor.a = Mathf.Lerp(240, 40, isCharged) / 255f; // = isCharged
-
+        this.desiredColor.a = Mathf.Lerp(240, 40, isCharged) / 255f; // = isCharged
+        if (!isLampOn) this.desiredColor.a = 240;
         this.fullScreenImage.color = this.desiredColor;
     }
     

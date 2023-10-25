@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BatteryPickUp : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         other.GameObject().GetComponent<Battery>();
         Battery battery = other.GameObject().GetComponent<Battery>();
